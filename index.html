@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dispatch Voice Tool</title>
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-xl shadow-xl max-w-lg w-full">
+    <h1 class="text-2xl font-bold mb-4 text-center">Dispatch Voice Tool</h1>
+
+    <label class="block mb-2 text-sm font-medium">Select Department</label>
+    <select id="department" class="w-full p-2 rounded border mb-4">
+      <option value="https://discord.com/api/webhooks/1394079516565176633/xF-87-P_SiBhsrQKE_8TIDnwFU9V1uvXRApvCNYWYhO0M-vDXJjBCk7IGWopdP85bTf5">LAPD</option>
+      <option value="https://discord.com/api/webhooks/1394080363156078682/snBuEI3cnelsO-RZjZPD1oWcg5bcMnmfnf4a8-GON_LHrbzd0qFnalJfSErQwzfMeHbo">LAFD</option>
+      <option value="https://discord.com/api/webhooks/1394079676988653748/GiLF0S8vxQX_0mtkhLPvx4Rt4iJX9Fo5GB3tl2IH37-I99zMGrv8nYS9N5fkmrYLW24m">CHP</option>
+      <option value="https://discord.com/api/webhooks/1394079641760698541/jsuWwInpdgZOu8OGHPO4lMgsY4YFtVHe_zmN07OwfWP4--lcQEj4RyT964AJXwKZ0Hlc">LASD</option>
+      <option value="https://discord.com/api/webhooks/1394079554238283776/59QHupGAzsqG6zzMuAVpIqgruTKBqwhg8MJy1XE32z9f23h7n0dNfquP634TCZG5Y00-">FBI</option>
+      <option value="https://discord.com/api/webhooks/1394079722656501953/YuElo5GRX9NqxesCQUwFOEgY9fruSyyaky2oJAgT3OM_wMM1Fjq-iDXR2ZNhWg8uVkMR">SMPD</option>
+      <option value="https://discord.com/api/webhooks/1394079599755006182/q2yI4gU96477xmrIcx5skjEK0DWfAFwGB0UgCfoLdlbdo2TDGkBkE10vjCa6lp5zi5DC">USMS</option>
+
+    </select>
+
+    <button id="startBtn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 mb-4">🎤 Start Speaking</button>
+
+    <textarea id="transcript" rows="4" class="w-full p-2 border rounded mb-4" placeholder="Your message will appear here..."></textarea>
+
+    <button id="sendBtn" class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700">Send to Discord</button>
+  </div>
+</body>
+</html>
